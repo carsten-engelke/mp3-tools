@@ -1,5 +1,7 @@
 # mp3-tools
 Merge mp3 files and set correct audio length using foobar2000 with an automated python script. These scripts can merge all files in one directory or create one file for each subdirectory.
+
+
 ![merge mp3 files from subdirectories](/mergemp3subdirs.jpg)
  - merge-mp3.py: merging script, works with foobar2000
  - pack-subdirs.py: pack files into grouped subdirectories (good for large audiobooks)
@@ -27,19 +29,17 @@ python mergeMp3.py [dir] [sub] [foobarpath] [autowaittime]
     [sub] determines wheter all mp3 files in subfolders should be merged into one file each. ('true' to do so)")
     [foobarpath] determines the path to your foobar2000 installation. Please provide in case it differs from 'C:/Program Files (x86)/foobar2000/foobar2000.exe'
     [autowaittime] determines whether to automatically clos foobar2000 after some seconds. Use -1 to disable and any number to set the waiting time.
-```
-```
+
 python pack-subdirs.py [group-size] [dir] [filter] [copy-mode]
     [group-size] determines the number of files to put into each directory
     [dir] determines the directory in which to perform the script. Use '.' to select the current directory
     [filter] Filter the file list according to this
     [copy-mode] If 'True', the files are copied into the created subfolders. If 'False' they are moved (Use with caution).
-´´´
-```
+
 python unpack-subdirs.py [dir] [subdir-filter] [filter] [copy-mode] [remove-dir]")
     [dir] determines the directory in which to perform the script. Use '.' to select the current directory
     [subdir-filter] Filter the subdir list according to this. Use '*' to select any subdirectory
     [filter] Filter the file list according to this
     [copy-mode] If 'True', the files are copied into the parent folder. If 'False' they are moved (Use with caution).
     [remove-dir] If 'True', the subdirectories are deleted. If 'False' they are left as they are.
-´´´
+```
