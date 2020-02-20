@@ -1,0 +1,10 @@
+README.md
+setup.py
+mp3_tools_carsten_engelke.egg-info/PKG-INFO
+mp3_tools_carsten_engelke.egg-info/SOURCES.txt
+mp3_tools_carsten_engelke.egg-info/dependency_links.txt
+mp3_tools_carsten_engelke.egg-info/top_level.txt
+src/__init__.py
+src/mp3-merge.py
+src/pack-subdirs.py
+src/unpack-subdirs.py
